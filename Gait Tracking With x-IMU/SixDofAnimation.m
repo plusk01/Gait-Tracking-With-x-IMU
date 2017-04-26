@@ -150,9 +150,9 @@ function fig = SixDOFanimation(varargin)
     else
         ShowArrowHeadStr = 'off';
     end
-    quivXhandle = quiver3(ox, oy, oz, ux, vx, wx,  'r', 'ShowArrowHead', ShowArrowHeadStr, 'MaxHeadSize', 0.999999, 'AutoScale', 'off');
-    quivYhandle = quiver3(ox, oy, oz, uy, vy, wy,  'g', 'ShowArrowHead', ShowArrowHeadStr, 'MaxHeadSize', 0.999999, 'AutoScale', 'off');
-    quivZhandle = quiver3(ox, ox, oz, uz, vz, wz,  'b', 'ShowArrowHead', ShowArrowHeadStr, 'MaxHeadSize', 0.999999, 'AutoScale', 'off');
+    quivXhandle = quiver3(ox, oy, oz, ux, vx, wx, 0.1, 'r', 'ShowArrowHead', ShowArrowHeadStr, 'MaxHeadSize', 0.999999, 'AutoScale', 'on');
+    quivYhandle = quiver3(ox, oy, oz, uy, vy, wy, 0.1, 'g', 'ShowArrowHead', ShowArrowHeadStr, 'MaxHeadSize', 0.999999, 'AutoScale', 'on');
+    quivZhandle = quiver3(ox, ox, oz, uz, vz, wz, 0.1, 'b', 'ShowArrowHead', ShowArrowHeadStr, 'MaxHeadSize', 0.999999, 'AutoScale', 'on');
 
     % Create legend
     if(ShowLegend)

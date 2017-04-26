@@ -1,7 +1,7 @@
 clear, clc, close all;
 
 % X Y Z
-t = linspace(0, 5, 1000);
+t = linspace(0, 5, 10000);
 pos = [(2*t)' cos(2*pi*2*t)' sin(2*pi*0.5*t + pi/8)'];
 
 % w + xi + yj + zk
