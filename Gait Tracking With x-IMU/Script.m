@@ -4,6 +4,9 @@ clc;
 addpath('Quaternions');
 addpath('ximu_matlab_library');
 
+% In case you don't have it
+deg2rad = @(d)d*pi/180;
+
 % -------------------------------------------------------------------------
 % Select dataset (comment in/out)
 
