@@ -95,7 +95,7 @@ function fig = SixDOFanimation(varargin)
     elseif(~isempty(Position))
         set(fig, 'Position', Position);
     end
-    set(gca, 'drawmode', 'fast');
+%     set(gca, 'drawmode', 'fast');
     lighting phong;
     set(gcf, 'Renderer', 'zbuffer');
     hold on;
